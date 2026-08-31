@@ -23,31 +23,31 @@ app.use(express.static('.'));
 // KIZ BOOST Knowledge Base for fallback mode
 const KIZ_KNOWLEDGE_BASE = {
     followers: {
-        keywords: ['followers', '1000', '5000', '10000', 'follow'],
-        response: 'KIZ BOOST Instagram & TikTok Growth Packages:\n• Instagram 1,000 Followers — 4,000 Rwf + free 20 likes, 10 reposts, and 10 followers\n• Instagram 5,000 Followers — 17,500 Rwf + free 100 likes, 50 reposts, and 50 followers\n• Instagram 10,000 Followers — 30,000 Rwf + free 200 likes, 100 reposts, and 100 followers\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+        keywords: ['followers', '100', '500', '1000', 'follow'],
+        response: 'KIZ BOOST Instagram Followers:\n• 100 Followers — $1\n• 500 Followers — $4\n• 1,000 Followers — $9\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
     },
     likes: {
-        keywords: ['likes', 'like', '20 likes', '100 likes', '200 likes'],
-        response: 'KIZ BOOST TikTok bonus offers:\n• 1,000 Followers package includes free 20 likes\n• 5,000 Followers package includes free 100 likes\n• 10,000 Followers package includes free 200 likes\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+        keywords: ['likes', 'like', '500 likes', '1000 likes', '5000 likes'],
+        response: 'KIZ BOOST Instagram Likes:\n• 500 Likes — $1.50\n• 1,000 Likes — $3\n• 5,000 Likes — $12\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
     },
     views: {
-        keywords: ['views', 'view', 'tiktok views'],
-        response: 'KIZ BOOST focuses on TikTok growth bundles with bonus engagement:\n• 1,000 Followers — 3,500 Rwf + free 20 likes, 10 reposts, 10 followers\n• 5,000 Followers — free 100 likes, 50 reposts, 50 followers\n• 10,000 Followers — free 200 likes, 100 reposts, 100 followers\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+        keywords: ['views', 'view', '500 views', '1000 views', '10000 views'],
+        response: 'KIZ BOOST Instagram Views:\n• 500 Views — $3\n• 1,000 Views — $5\n• 10,000 Views — $15\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
     },
     reposts: {
-        keywords: ['reposts', 'repost', '10 reposts', '50 reposts', '100 reposts'],
-        response: 'KIZ BOOST TikTok repost bonuses:\n• 1,000 Followers package includes 10 free reposts\n• 5,000 Followers package includes 50 free reposts\n• 10,000 Followers package includes 100 free reposts\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+        keywords: ['reposts', 'repost', '50 reposts', '100 reposts', '1000 reposts'],
+        response: 'KIZ BOOST Instagram Reposts:\n• 50 Reposts — $1\n• 100 Reposts — $2\n• 1,000 Reposts — $9\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
     },
     order: {
         keywords: ['order', 'buy', 'purchase', 'how to order'],
-        response: 'To order from KIZ BOOST:\n1. Choose a TikTok growth package\n2. Message us on Instagram: https://instagram.com/kriss_kruzz\n3. Confirm your order details\n4. We\'ll get started!\n\nWe don\'t ask for your password. All orders are handled through Instagram.'
+        response: 'To order from KIZ BOOST:\n1. Choose a service\n2. Message us on Instagram: https://instagram.com/kriss_kruzz\n3. Confirm your order details\n4. We\'ll get started!\n\nWe don\'t ask for your password. All orders are handled through Instagram.'
     },
     password: {
         keywords: ['password', 'secure', 'safety'],
-        response: 'KIZ BOOST does NOT ask for your TikTok password. Your account security is important to us. All orders are handled safely through Instagram messaging.'
+        response: 'KIZ BOOST does NOT ask for your Instagram password. Your account security is important to us. All orders are handled safely through Instagram messaging.'
     },
     default: {
-        response: 'Hi! I\'m KIZ AI. I can help with:\n• TikTok growth packages\n• Free bonuses included with each package\n• How to order\n\nFeel free to ask any questions about our TikTok growth services!'
+        response: 'Hi! I\'m KIZ AI. I can help with:\n• Service pricing\n• How to order\n• What KIZ BOOST offers\n\nFeel free to ask any questions about our Instagram growth services!'
     }
 };
 
@@ -81,29 +81,37 @@ KIZ BOOST
 Instagram:
 https://instagram.com/kriss_kruzz
 
-TikTok growth packages:
+Services and prices:
 
-Package 1:
-- Instagram 1,000 Followers — 4,000 Rwf
-- Includes free 20 likes, 10 reposts, and 10 followers
+Instagram Followers:
+- 100 Followers — $1
+- 500 Followers — $4
+- 1,000 Followers — $9
 
-Package 2:
-- Instagram 5,000 Followers — 17,500 Rwf
-- Includes free 100 likes, 50 reposts, and 50 followers
+Instagram Likes:
+- 500 Likes — $1.50
+- 1,000 Likes — $3
+- 5,000 Likes — $12
 
-Package 3:
-- 10,000 Followers
-- Includes free 200 likes, 100 reposts, and 100 followers
+Instagram Views:
+- 500 Views — $3
+- 1,000 Views — $5
+- 10,000 Views — $15
+
+Instagram Reposts:
+- 50 Reposts — $1
+- 100 Reposts — $2
+- 1,000 Reposts — $9
 
 ORDERING:
-Customers choose a package and then contact KIZ BOOST through Instagram
+Customers choose a service and then contact KIZ BOOST through Instagram
 to confirm their order.
 
 Instagram:
 https://instagram.com/kriss_kruzz
 
 SECURITY:
-KIZ BOOST does NOT ask customers for their TikTok password.
+KIZ BOOST does NOT ask customers for their Instagram password.
 
 PAYMENTS:
 Orders are handled directly through Instagram rather than through
@@ -111,13 +119,13 @@ the website.
 
 RULES:
 - Be friendly, professional and concise.
-- Answer questions about KIZ BOOST and its TikTok growth packages.
-- Use the package details above when answering pricing or bonus questions.
+- Answer questions about KIZ BOOST and its services.
+- Use the prices above when answering pricing questions.
 - Do not invent services or prices.
 - If you don't know something, say that the customer should contact
   KIZ BOOST on Instagram.
 - Never claim that you personally placed an order.
-- Never ask customers for their TikTok password.
+- Never ask customers for their Instagram password.
 - If someone wants to order, direct them to:
   https://instagram.com/kriss_kruzz
 `;
