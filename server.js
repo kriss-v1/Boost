@@ -23,6 +23,7 @@ app.use(express.static('.'));
 // KIZ BOOST Knowledge Base for fallback mode
 const KIZ_KNOWLEDGE_BASE = {
     followers: {
+<<<<<<< HEAD
         keywords: ['followers', '100', '500', '1000', 'follow'],
         response: 'KIZ BOOST Instagram Followers:\n• 100 Followers — $1\n• 500 Followers — $4\n• 1,000 Followers — $9\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
     },
@@ -41,13 +42,37 @@ const KIZ_KNOWLEDGE_BASE = {
     order: {
         keywords: ['order', 'buy', 'purchase', 'how to order'],
         response: 'To order from KIZ BOOST:\n1. Choose a service\n2. Message us on Instagram: https://instagram.com/kriss_kruzz\n3. Confirm your order details\n4. We\'ll get started!\n\nWe don\'t ask for your password. All orders are handled through Instagram.'
+=======
+        keywords: ['followers', '1000', '5000', '10000', 'follow'],
+        response: 'KIZ BOOST Instagram Growth Packages:\n• Instagram 1,000 Followers — 4,000 Rwf + free 20 likes, 10 reposts, and 10 followers\n• Instagram 5,000 Followers — 17,500 Rwf + free 100 likes, 50 reposts, and 50 followers\n• Instagram 10,000 Followers — 30,000 Rwf + free 200 likes, 100 reposts, and 100 followers\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+    },
+    likes: {
+        keywords: ['likes', 'like', '20 likes', '100 likes', '200 likes'],
+        response: 'KIZ BOOST Instagram bonus offers:\n• 1,000 Followers package includes free 20 likes\n• 5,000 Followers package includes free 100 likes\n• 10,000 Followers package includes free 200 likes\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+    },
+    views: {
+        keywords: ['views', 'view'],
+        response: 'KIZ BOOST focuses on Instagram growth bundles with bonus engagement:\n• 1,000 Followers — 3,500 Rwf + free 20 likes, 10 reposts, 10 followers\n• 5,000 Followers — free 100 likes, 50 reposts, 50 followers\n• 10,000 Followers — free 200 likes, 100 reposts, 100 followers\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+    },
+    reposts: {
+        keywords: ['reposts', 'repost', '10 reposts', '50 reposts', '100 reposts'],
+        response: 'KIZ BOOST Instagram repost bonuses:\n• 1,000 Followers package includes 10 free reposts\n• 5,000 Followers package includes 50 free reposts\n• 10,000 Followers package includes 100 free reposts\n\nMessage us on Instagram to order: https://instagram.com/kriss_kruzz'
+    },
+    order: {
+        keywords: ['order', 'buy', 'purchase', 'how to order'],
+        response: 'To order from KIZ BOOST:\n1. Choose an Instagram growth package\n2. Message us on Instagram: https://instagram.com/kriss_kruzz\n3. Confirm your order details\n4. We\'ll get started!\n\nWe don\'t ask for your password. All orders are handled through Instagram.'
+>>>>>>> ee72df136185d6553df69aea85860e4ff4eec897
     },
     password: {
         keywords: ['password', 'secure', 'safety'],
         response: 'KIZ BOOST does NOT ask for your Instagram password. Your account security is important to us. All orders are handled safely through Instagram messaging.'
     },
     default: {
+<<<<<<< HEAD
         response: 'Hi! I\'m KIZ AI. I can help with:\n• Service pricing\n• How to order\n• What KIZ BOOST offers\n\nFeel free to ask any questions about our Instagram growth services!'
+=======
+        response: 'Hi! I\'m KIZ AI. I can help with:\n• Instagram growth packages\n• Free bonuses included with each package\n• How to order\n\nFeel free to ask any questions about our Instagram growth services!'
+>>>>>>> ee72df136185d6553df69aea85860e4ff4eec897
     }
 };
 
@@ -81,7 +106,11 @@ KIZ BOOST
 Instagram:
 https://instagram.com/kriss_kruzz
 
+<<<<<<< HEAD
 Services and prices:
+=======
+Instagram growth packages:
+>>>>>>> ee72df136185d6553df69aea85860e4ff4eec897
 
 Instagram Followers:
 - 100 Followers — $1
@@ -119,8 +148,13 @@ the website.
 
 RULES:
 - Be friendly, professional and concise.
+<<<<<<< HEAD
 - Answer questions about KIZ BOOST and its services.
 - Use the prices above when answering pricing questions.
+=======
+- Answer questions about KIZ BOOST and its Instagram growth packages.
+- Use the package details above when answering pricing or bonus questions.
+>>>>>>> ee72df136185d6553df69aea85860e4ff4eec897
 - Do not invent services or prices.
 - If you don't know something, say that the customer should contact
   KIZ BOOST on Instagram.
