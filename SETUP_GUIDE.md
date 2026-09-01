@@ -6,7 +6,7 @@ Your project is now properly configured for a secure AI chat system. Here's what
 
 ### 1. **Security Fix** 🔐
 - ✅ Removed exposed Gemini API key from frontend (`script.js`)
-- ✅ Moved API key to secure `.env.local` file (kept server-side only)
+- ✅ Moved API key to a secure `.env` file (kept server-side only, not committed)
 - ✅ Created `.gitignore` to prevent accidental commits of sensitive data
 
 ### 2. **Backend Server Setup** 🚀
@@ -64,12 +64,16 @@ AI Response ← Back to User
 
 ## 🔧 Configuration
 
-### Environment Variables (`.env.local`)
+### Environment Variables (`.env` or `.env.local`)
+The server loads configuration from `.env`, then `.env.local`, so either file works.
+
 ```
 GEMINI_API_KEY=your_api_key_here
+USE_MOCK_MODE=false   # optional: set true to force mock mode without the API
 ```
 
-**Never commit this file!** It's in `.gitignore`.
+**Never commit these files!** They are in `.gitignore`. Create a copy named
+`.env.example` locally if you want a shareable template (do not commit the real key).
 
 ---
 
@@ -79,16 +83,20 @@ GEMINI_API_KEY=your_api_key_here
 **Request:**
 ```json
 {
-  "message": "What's the price for 500 followers?"
+  "message": "How much is the 1,000 followers package?"
 }
 ```
 
 **Response:**
 ```json
 {
-  "reply": "500 followers cost $4. Would you like to order?"
+  "reply": "✔ Instagram 1,000 Followers — 4,000 Rwf + free 20 likes, 10 reposts, and 10 followers. Message us on Instagram to order!"
 }
 ```
+
+The server uses the Gemini model `gemini-3.6-flash`. If no `GEMINI_API_KEY` is
+set or the API call fails, it automatically falls back to a built-in
+keyword-matching mock so the chat still responds.
 
 ---
 
@@ -125,7 +133,7 @@ GEMINI_API_KEY=your_api_key_here
 The AI is configured to:
 - Answer pricing questions
 - Explain KIZ BOOST services
-- Direct users to Instagram (@kriss_kruzz) for ordering
+- Direct users to Instagram (@kizboost) for ordering
 - Not ask for sensitive information
 
 ---
