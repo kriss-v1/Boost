@@ -102,7 +102,7 @@ keyword-matching mock so the chat still responds.
 
 ## ✨ Features
 
-- ✅ AI answers questions about KIZ BOOST services
+- ✅ AI answers questions about KIZ BOOST services in any languge
 - ✅ Provides accurate pricing
 - ✅ Directs users to Instagram for ordering
 - ✅ Never asks for passwords (built into system prompt)
